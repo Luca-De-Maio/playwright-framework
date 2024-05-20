@@ -47,7 +47,7 @@ test.beforeEach(async ({ page, blocker }) => {
     await homePage.visit(page);
 });
 
-test.only('should allow a user to complete the checkout process', async ({ page }) => {
+test('should allow a user to complete the checkout process', async ({ page }) => {
   const onNavigationPage = new NavigationPage(page);
   await onNavigationPage.scrollToCenter();
 
