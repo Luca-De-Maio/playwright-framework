@@ -28,7 +28,7 @@ jobs:
         run: npx playwright install chromium                             
 
       - name: Run Playwright tests
-        run: npm test
+        run: npm test 
 
       - name: Upload test results
         if: always()
